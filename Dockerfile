@@ -7,7 +7,7 @@ COPY package*.json /app/
 
 RUN npm install
 
-COPY . /app/
+COPY server /app/
 
 ENV REACT_APP_FRONTEND_ENV=PRODUCTION
 
