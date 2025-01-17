@@ -1,5 +1,5 @@
 // Хост
-const host = "https://localhost:8090/";
+const host = "http://localhost:8090/";
 
 // PUT
 // Обновление токена
