@@ -1,3 +1,13 @@
+const cors = require('cors');
+const express = require('express')
+
+const app = express();
+
+app.use(cors({
+  origin: ['https://prismatic-alpaca-591356.netlify.app', 'http://localhost:3000'], // Разрешенные домены
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Разрешенные методы
+  credentials: true, // Если нужно передавать куки
+}));
 // Хост
 const host = "http://localhost:8090/";
 
